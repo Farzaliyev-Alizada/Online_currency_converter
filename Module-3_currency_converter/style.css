@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --header: #F5F5F6;
+    --selected: #833AE0;
+    --main_color: #C6C6C6;
+    --border: #e5e5e5;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header_wrapper {
+    padding: 0.625rem 6.25rem;
+    justify-content: space-between;
+}
+
+
+
+.flex {
+    display: flex;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+header {
+    background: var(--header);
+}
+
+ul {
+    list-style: none;
+}
+
+.header_options li {
+    margin-right: 2.19rem;
+    cursor: pointer;
+    color: var(--main_color);
+    font-size: 1.25rem;
+}
+
+.header_options li:hover {
+    color: black;
+}
+
+.header_login {
+    color: var(--main_color);
+    font-size: 1.25rem;
+}
+
+.header_login:hover {
+    color: black;
+    background: #fff;
+}
+
+section {
+    padding-top: 4.375rem;
+    justify-content: center;
+}
+
+.container {
+    padding: 0.625rem 6.25rem;
+}
+
+.container h1 {
+    padding-bottom: 2.19rem;
+    font-weight: 700;
+    font-size: 2.19rem;
+    line-height: 2.625rem;
+}
+
+.converting_part {
+    justify-content: space-between;
+}
+
+.reverse img {
+    width: 2rem;
+    margin: 1rem 3rem;
+}
+
+.reverse img:hover {
+    filter: invert(28%) sepia(44%) saturate(7108%) hue-rotate(235deg) brightness(91%) contrast(91%);
+}
+
+.selected {
+    background-color: var(--selected);
+    color: #fff;
+}
+
+.from_to {
+    font-size: 1rem;
+    line-height: 0.875rem;
+    color: var(--main_color);
+    margin-bottom: 5px;
+}
+
+.money_name li {
+    border: 1px solid var(--border);
+    padding: 5px 17px;
+    margin-bottom: 1.875rem;
+}
+
+.money_name li:hover {
+    background-color: #833AE0;
+    color: #fff;
+}
+
+.exchange_section {
+    border: 1px solid var(--border);
+    width: 16.4375rem;
+    padding: 10px 15px;
+}
+
+input {
+    border: none;
+    outline: none;
+    appearance: none;
+    width: 100%;
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 42px;
+    padding-bottom: 1.25rems;
+}
+
+.exchange_rate p {
+    font-size: 0.75rem;
+    line-height: 14px;
+    color: var(--main_color);
+    padding-top: 25px;
+
+}
+
+@media only screen and (max-width: 1100px) {
+    :root {
+        font-size: 14px;
+    }
+
+    .header_logo svg {
+        width: 70px;
+        height: 18px
+    }
+}
+
+
+@media only screen and (max-width: 950px) {
+    :root {
+        font-size: 12px;
+    }
+
+    .header_logo svg {
+        width: 60px;
+        height: 12px
+    }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
